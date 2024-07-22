@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./imagenes/oracleicon.ico">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Challenges Encriptador de Texto</title>
+</head>
+<body>
+    
+    <!--Encabezado del encriptador-->
+    <header>
+        <a href="#" rel="">
+            <img src="./imagenes/Logo.png" alt="Logo Alura" class="logo">
+        </a>
+    </header>
+
+    <!--Seccion principal-->
+    <!--Formada de 2 secciones. seccion de clase encriptador donde se ingresa el texto y los 2 botones y 
+    seccion de clase seccion_muñeco donde esta la imagen del muñeco -->
+    <main>
+        <section class="encriptador">
+            <textarea class="txtTexto" placeholder="Ingrese su texto aqui"></textarea>
+            <div class="advertencia_del_encriptador">
+                <img src="./imagenes/advertencia.svg" alt="Imagen Advertencia" class="imagen_Advertencia">
+                <p class="texto_informativo"> Ingrese solo letras minusculas y sin acentos</p>
+            </div>
+            <div class="contenedor_de_botones">
+                <button type="submit" class="botonEncriptar">Encriptar</button>
+                <button type="submit" class="botonDesencriptar">Desencriptar</button>
+            </div>
+        </section>
+        <section class="seccion_muñeco">
+            <div class="contenedor_de_muñeco">
+                <img src="./imagenes/muñeco.svg" alt="Imagen de Muñeco" class="imgMuñeco">
+                <p class="mensaje_por_defecto">Ningun mensaje fue encontrado</p>
+                <p class="mensaje_de_accion">Ingrese el texto que desea encriptar o desencriptar</p>
+            </div>
+            <textarea type="mensaje" class="evaluar" readonly></textarea>
+            <button type="submit" class="botonCopiar">Copiar</button>
+        </section>
+    </main>
+
+    <!--Pie de pagina del encriptador-->
+    <footer>
+        <p class="desarrollador">Encriptador de texto - 2024 - Desarrollado por Leonardo Zelarayan</p>
+        <a href="#" rel="">
+            <img src="./imagenes/linkedin.svg" alt="Logo Linkedin" class="Linkedin">
+        </a>
+        <a href="#" rel="">
+            <img src="./imagenes/github.svg" alt="Logo GitHub" class="GitHub">
+        </a>
+    </footer>
+
+    <script src="encriptador.js"></script>
+</body>
+</html>
